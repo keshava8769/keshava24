@@ -1,0 +1,44 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="styles.css">  
+    <title>Login Page</title> 
+    <script>
+        function btn(){
+            let username=document.getElementById("username").value;
+            let password=document.getElementById("password").value;
+            if(username==""){
+                alert("Enter the Username!!");
+            } else if(password==""){
+                alert("Enter the Password!!");
+            }else{
+                let res= alert('Login successfully')
+                
+            }
+
+        }
+
+            
+        
+    </script> 
+</head>  
+<body>
+    
+    <div class="container">  
+        <form class="login-form">  
+            <h2>Login</h2>  
+            <div class="input-group">  
+                <label for="username">Username</label>  
+                <input type="text" id="username" name="username" >  
+            </div>  
+            <div class="input-group">  
+                <label for="password">Password</label>  
+                <input type="password" id="password" name="password">  
+            </div>  
+            <button type="submit" onclick="btn()">Login</button>  
+        </form>  
+    </div>  
+</body>  
+</html>
